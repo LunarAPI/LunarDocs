@@ -2,65 +2,12 @@
 
 Lunar API is a powerful backend service providing authentication, player statistics, leaderboards, and much more. This guide explains how to set up the environment, authenticate users, and interact with the API effectively.
 
-## 🌍 Environment Setup
 
-Before running the Lunar API backend, set up the required environment variables.
-
-### 📌 Step 1: Create a `.env` File
-
-Run the following command to copy the example environment file:
-
-```bash
-cp .env.example .env
-```
-
-### 🔑 Step 2: Configure Environment Variables
-
-Ensure the following variables are set in your `.env` file:
-
-```env
-JWT_SECRET=your_dev_secret_key_here  # Generate using: openssl rand -base64 32
-
-GITHUB_CLIENT_ID=your_github_client_id
-GITHUB_CLIENT_SECRET=your_github_secret
-GITHUB_CALLBACK_URL=https://API.Lunarify.app/auth/github/callback
-```
-
-## 🚀 Running the Backend
-
-Follow these steps to start the Lunar API backend:
-
-1. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-
-2. Start the backend server:
-
-   ```bash
-   npm run dev
-   ```
-
-## 🔐 Authentication
 
 ### 🛠️ Obtaining an API Key
 
-To generate an API key, send the following request:
+To generate an API key, go to LunarAPI.org and create an account and register an API-Key.
 
-```bash
-curl -X POST https://API.Lunarify.app/auth/api-key \
-  -H "Content-Type: application/json" \
-  -d '{"name": "My API Key", "plan": "free"}'
-```
-
-### 🔗 GitHub OAuth Login
-
-Redirect users to authenticate via GitHub:
-
-```bash
-GET https://API.Lunarify.app/auth/github
-```
 
 ## 📡 API Usage
 
@@ -228,15 +175,8 @@ Free-tier API keys have the following limits:
 
 For higher limits, contact us for premium plans.
 
-## 🤝 Contributing
-
-We welcome contributions! Feel free to submit pull requests or report issues on GitHub.
-
-## 📜 License
-
-This project is licensed under the MIT License.
 
 ---
 
-🌙 **Lunar API - Empowering the Future of Gaming**
+**Lunar API - Empowering the Future of Gaming**
 
