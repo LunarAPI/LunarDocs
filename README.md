@@ -6,128 +6,147 @@ Lunar API is a powerful backend service providing authentication, player statist
 
 ### 🛠️ Obtaining an API Key
 
-To generate an API key, visit api.Lunarify.app, create an account, and register an API key.
+To generate an API key, visit [api.Lunarify.app](https://api.lunarify.app), create an account, and register an API key.
 
-## 📡 API Usage
+## 📡 API Key Header
 
 All API requests require an API key sent in the `X-API-Key` header.
+```json
+{
+  "X-API-Key": "MY_API_KEY",
+}
+```
+
+Not providing an API key will result in the following message.
+
+```json
+{
+  "error": "API key is required"
+}
+```
+
+Please refer to your language of choice documentation to learn more about HTTP headers.
 
 ## 📌 Endpoints
 
 ### 🎮 Players
 
 - **Get player info:**
-  ```bash
-  curl https://API.Lunarify.app/api/v1/player/{id} \
-    -H "X-API-Key: your_api_key_here"
+  ```plaintext
+  https://API.Lunarify.app/api/v1/player/{id}
   ```
+
+  **Params:**
+    - Id: The player id to search for.
 
 ### ⚔️ Matches
 
 - **Get ranked match details:**
-  ```bash
-  curl https://API.Lunarify.app/api/v1/match/ranked/{id} \
-    -H "X-API-Key: your_api_key_here"
+  ```plaintext
+  https://API.Lunarify.app/api/v1/match/ranked/{id}
   ```
+  **Params:**
+    - Id: The ranked match id to search for.
+
 - **Get unranked match details:**
-  ```bash
-  curl https://API.Lunarify.app/api/v1/match/unranked/{id} \
-    -H "X-API-Key: your_api_key_here"
+  ```plaintext
+  https://API.Lunarify.app/api/v1/match/unranked/{id}
   ```
+  **Params:**
+    - Id: The unrated match id to search for.
 
 ### 🗺️ Maps
 
 - **Get all maps:**
-  ```bash
-  curl https://API.Lunarify.app/api/v1/maps \
-    -H "X-API-Key: your_api_key_here"
+  ```plaintext
+  https://API.Lunarify.app/api/v1/maps
   ```
 - **Get maps base URL:**
-  ```bash
-  curl https://API.Lunarify.app/api/v1/maps/base-url \
-    -H "X-API-Key: your_api_key_here"
+  ```plaintext
+  https://API.Lunarify.app/api/v1/maps/base-url
   ```
 
 ### 🦸 Heroes
 
 - **List all heroes:**
-  ```bash
-  curl https://API.Lunarify.app/api/v1/hero \
-    -H "X-API-Key: your_api_key_here"
+  ```plaintext
+  https://API.Lunarify.app/api/v1/hero
   ```
+
 - **Get a specific hero:**
-  ```bash
-  curl https://API.Lunarify.app/api/v1/hero/{name} \
-    -H "X-API-Key: your_api_key_here"
+  ```plaintext
+  https://API.Lunarify.app/api/v1/hero/{name}
   ```
+  **Params:**
+    - Name: The name of the hero to return.
 
 ### 🎒 Items
 
 - **Get all items:**
-  ```bash
-  curl https://API.Lunarify.app/api/v1/items \
-    -H "X-API-Key: your_api_key_here"
+  ```plaintext
+  https://API.Lunarify.app/api/v1/items
   ```
+
 - **Get items by bundle ID:**
-  ```bash
-  curl https://API.Lunarify.app/api/v1/items/{bundleId} \
-    -H "X-API-Key: your_api_key_here"
+  ```plaintext
+  https://API.Lunarify.app/api/v1/items/{bundleId}
   ```
+  **Params:**
+    - Bundle Id: The player id to search for.
+
 - **Search items:**
-  ```bash
-  curl https://API.Lunarify.app/api/v1/items/search?query=xyz \
-    -H "X-API-Key: your_api_key_here"
+  ```plaintext
+  https://API.Lunarify.app/api/v1/items/search?query=xyz
   ```
 
 ### 🏅 Rankings & Leaderboards
 
 - **Get rank distribution:**
-  ```bash
-  curl https://API.Lunarify.app/api/v1/rank/distribution \
-    -H "X-API-Key: your_api_key_here"
+  ```plaintext
+  https://API.Lunarify.app/api/v1/rank/distribution
   ```
+
 - **Get the global leaderboard:**
-  ```bash
-  curl https://API.Lunarify.app/api/v1/leaderboard \
-    -H "X-API-Key: your_api_key_here"
+  ```plaintext
+  https://API.Lunarify.app/api/v1/leaderboard
   ```
+
 - **Get a hero-specific leaderboard:**
-  ```bash
-  curl https://API.Lunarify.app/api/v1/leaderboard/hero/{heroId} \
-    -H "X-API-Key: your_api_key_here"
+  ```plaintext
+  https://API.Lunarify.app/api/v1/leaderboard/hero/{heroId}
   ```
+  **Params:**
+    - Hero Id: The hero Id to search for 
+
 
 ### 🎟️ Battle Pass
 
 - **Get battle pass info:**
-  ```bash
-  curl https://API.Lunarify.app/api/v1/battlepass \
-    -H "X-API-Key: your_api_key_here"
+  ```plaintext
+  https://API.Lunarify.app/api/v1/battlepass
   ```
 
 ### 🏆 Achievements
 
 - **List all achievements:**
-  ```bash
-  curl https://API.Lunarify.app/api/v1/achievements \
-    -H "X-API-Key: your_api_key_here"
+  ```plaintext
+  https://API.Lunarify.app/api/v1/achievements
   ```
 
 ### 🎫 Codes
 
 - **List all codes:**
-  ```bash
-  curl https://API.Lunarify.app/api/v1/codes \
-    -H "X-API-Key: your_api_key_here"
+  ```plaintext
+  https://API.Lunarify.app/api/v1/codes
   ```
 
 ### 🎨 Skins
 
 - **List all skins:**
-  ```bash
-  curl https://API.Lunarify.app/api/v1/skins \
-    -H "X-API-Key: your_api_key_here"
+  ```plaintext
+  https://API.Lunarify.app/api/v1/skins
   ```
+  
 
 ## 📊 Response Formats
 
