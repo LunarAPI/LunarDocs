@@ -82,12 +82,16 @@ Please refer to your language of choice documentation to learn more about HTTP h
   ```plaintext
   https://API.Lunarify.app/api/v1/teamups/:id
   ```
+  **Params:**
+    - Id: The teamup ID under /api/v1/teamups
   
   - **Teamup by Hero:**
   ```plaintext
   https://API.Lunarify.app/api/v1/teamups/hero/:heroId
   ```
-  
+  **Params:**
+    - heroId: The hero Id under /api/v1/teamups
+
 - **Get a specific hero:**
   ```plaintext
   https://API.Lunarify.app/api/v1/hero/{name}
@@ -177,7 +181,8 @@ Please refer to your language of choice documentation to learn more about HTTP h
   ```plaintext
   https://API.Lunarify.app/api/v1/devdiary/:id
   ```
-  
+  **Params:**
+    - Id: The ID from the /api/v1/devdiary
 ## 📊 Response Formats
 
 ### ✅ Success Response
