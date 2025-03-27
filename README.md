@@ -73,6 +73,21 @@ Please refer to your language of choice documentation to learn more about HTTP h
   https://API.Lunarify.app/api/v1/hero
   ```
 
+- **Get all Teamups:**
+  ```plaintext
+  https://API.Lunarify.app/api/v1/teamups
+  ```
+
+  - **Teamup by ID:**
+  ```plaintext
+  https://API.Lunarify.app/api/v1/teamups/:id
+  ```
+  
+  - **Teamup by Hero:**
+  ```plaintext
+  https://API.Lunarify.app/api/v1/teamups/hero/:heroId
+  ```
+  
 - **Get a specific hero:**
   ```plaintext
   https://API.Lunarify.app/api/v1/hero/{name}
@@ -146,8 +161,23 @@ Please refer to your language of choice documentation to learn more about HTTP h
   ```plaintext
   https://API.Lunarify.app/api/v1/skins
   ```
-  
+### 🌐 Updates & More
 
+- **List all Dev Diaries:**
+  ```plaintext
+  https://API.Lunarify.app/api/v1/devdiary
+  ```
+
+- **Get Latest Dev Diaries:**
+  ```plaintext
+  https://API.Lunarify.app/api/v1/devdiary/latest
+  ```
+
+- **Get Dev Diary by ID:**
+  ```plaintext
+  https://API.Lunarify.app/api/v1/devdiary/:id
+  ```
+  
 ## 📊 Response Formats
 
 ### ✅ Success Response
