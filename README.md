@@ -31,29 +31,36 @@ Please refer to your language of choice documentation to learn more about HTTP h
 
 ### 🎮 Players
 
-- **Get player info:**
+- **Get Player Info:**
   ```plaintext
-  https://API.Lunarify.app/api/v1/player/{id}
+  https://API.Lunarify.app/api/v1/player/{playerId}
   ```
 
   **Params:**
-    - Id: The player id to search for.
+    - playerId: The player id to search for.
 
 ### ⚔️ Matches
 
-- **Get ranked match details:**
+- **Get Ranked Matches:**
   ```plaintext
-  https://API.Lunarify.app/api/v1/match/ranked/{id}
+  https://API.Lunarify.app/api/v1/match/ranked/{playerId}
   ```
   **Params:**
-    - Id: The ranked match id to search for.
+    - playerId: The player id to search for.
 
-- **Get unranked match details:**
+- **Get Unranked Matches:**
   ```plaintext
-  https://API.Lunarify.app/api/v1/match/unranked/{id}
+  https://API.Lunarify.app/api/v1/match/unranked/{playerId}
   ```
   **Params:**
-    - Id: The unrated match id to search for.
+    - playerId: The player id to search for.
+
+- **Get Match Details**
+  ```plaintext
+    https://API.Lunarify.app/api/v1/match/{matchId}
+  ```
+  **Params:**
+  - matchId: The match id to search for.
 
 ### 🗺️ Maps
 
