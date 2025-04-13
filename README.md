@@ -73,6 +73,27 @@ Please refer to your language of choice documentation to learn more about HTTP h
   https://API.Lunarify.app/api/v1/maps/base-url
   ```
 
+### 🎮 Team Compositions
+
+- **Get Current Meta Team Comps:**
+  ```plaintext
+  https://API.Lunarify.app/api/v1/teamcomp
+  ```
+
+### 📝 Patch Notes
+
+- **Get All Patch Notes:**
+  ```plaintext
+  https://API.Lunarify.app/api/v1/patchnotes
+  ```
+
+- **Get Specific Patch Note:**
+  ```plaintext
+  https://API.Lunarify.app/api/v1/patchnotes/{id}
+  ```
+  **Params:**
+    - id: The patch note id (format: YYYYMMDD)
+
 ### 🦸 Heroes
 
 - **List all heroes:**
@@ -151,6 +172,13 @@ Please refer to your language of choice documentation to learn more about HTTP h
   ```plaintext
   https://API.Lunarify.app/api/v1/battlepass
   ```
+
+Current Season: **Season 2: Flowers of Krakoa**
+- Features over 50 unique cosmetic items
+- Includes exclusive Spider-Oni and Retro X-Uniform collections
+- Premium rewards include Luxury tier items
+- Special themed items like Dancing Petals and Krakoa Seedlings
+- Contains both free and premium reward tracks
 
 ### 🏆 Achievements
 
